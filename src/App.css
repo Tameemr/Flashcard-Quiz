@@ -1,5 +1,6 @@
 body {
   background-color: #c8d0d2;
+  margin: 0;
 }
 
 .container {
@@ -45,7 +46,7 @@ body {
 .card-grid {
   display: grid;
   align-items: center;
-  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
 }
 
@@ -59,7 +60,7 @@ body {
   background-color: white;
   transform-style: preserve-3d;
   height: 150px;
-  width: 150px;
+  /* width: 150px; */
   transition: 150ms;
   cursor: pointer;
   transform: perspective(1000px) rotateY(var(--rotate-y, 0))
